@@ -6,6 +6,14 @@
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 
+/*배경이미지*/
+.school-logo {
+  display: block;
+  width: 90px;
+  margin: 0 auto 20px auto;
+  opacity: 0.95;
+}
+
 /* 전체 배경 */
 body {
   background-color: #f0f4f9;
@@ -14,7 +22,12 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
+  background: url("/static/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(3px);
 }
+
+
 
 /* 메인 카드 박스 */
 .container {
