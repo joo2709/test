@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학생 계정 검색</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>대성고 학생 계정 검색</h1>
+    <form id="searchForm">
+      <div class="form-group">
+        <label for="studentId">학번</label>
+        <input type="text" id="studentId" name="studentId" required>
+      </div>
+      <div class="form-group">
+        <label for="studentName">이름</label>
+        <input type="text" id="studentName" name="studentName" required>
+      </div>
+      <button type="submit">검색</button>
+    </form>
+
+    <div id="result" class="result-box" style="display: none;">
+      <h2>검색 결과</h2>
+      <p><strong>구글 ID:</strong> <span id="googleId"></span></p>
+      <p><strong>초기 비밀번호:</strong> <span id="googlePw"></span></p>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
